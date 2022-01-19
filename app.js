@@ -142,5 +142,3 @@ document.querySelector(".map-container").addEventListener("dragstart", dragStart
 document.querySelector(".map-container").addEventListener("dragover", dragOver)
 // dragEnd is to update opacity of tile when drag is end
 document.querySelector(".map-container").addEventListener("dragend", dragEnd)   
-
-
