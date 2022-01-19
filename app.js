@@ -30,10 +30,6 @@ const createNewMap = () => {
             event.target.classList.add("selected")
             currentTile = event.target
         }
-        else {
-            // clicked outside of map tile
-            //alert("click on a map tile")
-        }
     }
     // select a map tile after creating a new map
     document.querySelector("#library-container").addEventListener("click", selectMapTile)
@@ -76,7 +72,6 @@ const createNewMap = () => {
     const MouseUpYourMap = (event) => {
         if (event.target.tagName.toLowerCase() === "img" && currentTile.id === "removeTile") {   
             event.target.remove()
-            //console.log("ERASED BY CLICKING")
         }
     }
 
