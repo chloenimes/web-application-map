@@ -1,0 +1,89 @@
+<!-- 
+    Course      : WEB222 NDD
+    Student Name: Semin Jung 
+    Student ID  : 109723205
+    Date        : 2021-07-28
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Map Maker App</title>
+     <link rel="stylesheet" href="styles.css"/>
+     <!-- font: concert one-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Concert+One&display=swap" rel="stylesheet">
+</head>
+ <body>
+    <h1>Map Maker</h1>
+    <button id="btn-new">CREATE NEW MAP</button>
+
+    <div id="library-container">
+        <h2>Select a Map Tile</h2>
+        <!-- library of map tiles -->
+        <div class="library-map-tiles">
+            <div class="map-tile">
+                <img class= "tile" src="a3-images/grass.png" alt="grass">
+            </div>
+            <div class="map-tile">
+                <img class= "tile" src="a3-images/mountain.png" alt="mountain">
+            </div>
+            <div class="map-tile">
+                <img class= "tile" src="a3-images/forest.png" alt="forest">
+            </div>
+            <div class="map-tile">
+                <img class= "tile selected" src="a3-images/water.png" alt="water">
+            </div>
+            <div class="map-tile">
+                <img class= "tile" src="a3-images/player.png" alt="player">
+            </div>
+            <div class="map-tile">
+                <img id="removeTile" class= "tile" src="a3-images/remove.png" alt="remove">
+            </div>
+        </div>
+    </div>    
+
+
+    <!-- create your map 5x3 -->
+    <!-- <h3>my guideline of map squares</h3>
+    <p>available= empty box</p>
+    <p>occupied = selected image</p>
+    <p>remove   = erase image</p> -->
+    <div id="your-map" class="hidden">
+        <h2>Your Map</h2>
+        <div class="map-container">
+            <div class="row">
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+            </div>
+            <div class="row">
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+            </div>
+            <div class="row">
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+                <div class="map-square"></div>
+            </div>
+        </div>        
+    </div>
+
+    <footer>
+        <p>©Map Maker by Semin Jung</p>
+    </footer>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="app.js"></script>
+ </body>
+ </html>
